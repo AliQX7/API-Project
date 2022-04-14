@@ -99,7 +99,9 @@ newspapers.forEach(newspaper => {
                         source: newspaper.name
                     })
                 }
+                
             })
+            console.log('Articles fetched: ',articles.length)
         })
 })
 
@@ -146,3 +148,4 @@ app.get('/news/:newspaperId', (req, res) =>{
 })
 
 app.listen(PORT, () => console.log(`server running on PORT ${PORT}`))
+
